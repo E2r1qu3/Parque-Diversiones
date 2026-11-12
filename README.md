@@ -34,7 +34,5 @@ python parque.py
 El historial de reclamos también se puede guardar en un archivo de texto.
 
 ## Equipo
-
-(Nombres de los integrantes)
 Kendall A. Quesada Mendoza
 Jose Mendez Mayorga.
