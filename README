@@ -1,36 +1,38 @@
-# Parque de Diversiones - Quiz 2 (Estructuras de Datos)
+# Parque de Diversiones — Quiz 2 (Estructuras de Datos)
 
-Simulador de "Un día en el parque" con interfaz gráfica. Usa las tres
-herramientas vistas en clase dentro de un único programa:
+Simulador de **«Un día en el parque»** con interfaz gráfica. El programa reúne tres herramientas vistas en clase:
 
-| Parte | Estructura | Dónde está |
-|---|---|---|
-| Fila de la montaña rusa | **Cola** (FIFO), con nodos enlazados | `estructuras.py` -> `Cola` |
-| Libro de reclamos con "deshacer" | **Pila** (LIFO), con nodos enlazados | `estructuras.py` -> `Pila` |
-| Fuegos artificiales de cierre | **Recursividad** | `fuegos.py` -> `explotar()` |
+| Parte | Estructura | Implementación |
+| --- | --- | --- |
+| Fila de la montaña rusa | **Cola (FIFO)** con nodos enlazados | `estructuras.py` → `Cola` |
+| Libro de reclamos con opción de deshacer | **Pila (LIFO)** con nodos enlazados | `estructuras.py` → `Pila` |
+| Fuegos artificiales de cierre | **Recursividad** | `fuegos.py` → `explotar()` |
 
-## Cómo correrlo
+## Requisitos
 
-```
+- Python 3.8 o posterior.
+- No se necesitan paquetes adicionales. `tkinter` viene incluido con Python en Windows y macOS. En Linux, si no está instalado, puedes agregarlo con:
+
+  ```bash
+  sudo apt install python3-tk
+  ```
+
+## Cómo ejecutar
+
+Desde la carpeta del proyecto, ejecuta:
+
+```bash
 python parque.py
 ```
 
-## Qué instalar
-
-Nada. Solo Python 3.8+ (tkinter viene incluido en Windows y macOS).
-En Linux, si falta: `sudo apt install python3-tk`.
-
 ## Cómo probarlo
 
-1. **Montaña rusa:** agrega visitantes (o usa "+ Visitante aleatorio") y pulsa
-   "Subir al primero": siempre sube quien llegó antes.
-2. **Reclamos:** registra varias acciones y pulsa "Deshacer": siempre se
-   deshace la más reciente (también con Ctrl+Z).
-3. **Cierre:** pulsa "Lanzar fuegos artificiales". Mientras más visitantes
-   hayan subido, más grande es la explosión.
+1. **Montaña rusa:** agrega visitantes o pulsa **«+ Visitante aleatorio»**. Luego pulsa **«Subir al primero»**; sube siempre quien llegó antes.
+2. **Reclamos:** registra varias acciones y pulsa **«Deshacer»**. Se deshace primero la acción más reciente. También puedes usar **Ctrl+Z**.
+3. **Cierre:** pulsa **«Lanzar fuegos artificiales»**. Cuantos más visitantes hayan subido, más grande será la explosión.
 
-Extras: el historial de reclamos se puede guardar en un archivo de texto.
+El historial de reclamos también se puede guardar en un archivo de texto.
 
 ## Equipo
-Kendall A. Quesada M
-Jose Mendez Mayorga.
+
+(Nombres de los integrantes)
