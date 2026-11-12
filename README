@@ -1,0 +1,38 @@
+# Parque de Diversiones - Quiz 2 (Estructuras de Datos)
+
+Simulador de "Un día en el parque" con interfaz gráfica. Usa las tres
+herramientas vistas en clase dentro de un único programa:
+
+| Parte | Estructura | Dónde está |
+|---|---|---|
+| Fila de la montaña rusa | **Cola** (FIFO), con nodos enlazados | `estructuras.py` -> `Cola` |
+| Libro de reclamos con "deshacer" | **Pila** (LIFO), con nodos enlazados | `estructuras.py` -> `Pila` |
+| Fuegos artificiales de cierre | **Recursividad** | `fuegos.py` -> `explotar()` |
+
+## Cómo correrlo
+
+```
+python parque.py
+```
+
+## Qué instalar
+
+Nada. Solo Python 3.8+ (tkinter viene incluido en Windows y macOS).
+En Linux, si falta: `sudo apt install python3-tk`.
+
+## Cómo probarlo
+
+1. **Montaña rusa:** agrega visitantes (o usa "+ Visitante aleatorio") y pulsa
+   "Subir al primero": siempre sube quien llegó antes.
+2. **Reclamos:** registra varias acciones y pulsa "Deshacer": siempre se
+   deshace la más reciente (también con Ctrl+Z).
+3. **Cierre:** pulsa "Lanzar fuegos artificiales". Mientras más visitantes
+   hayan subido, más grande es la explosión.
+
+Extras: el historial de reclamos se puede guardar en un archivo de texto.
+
+## Equipo
+Kendall A. Quesada Mendoza
+Jose Mendez Mayorga.
+
+(nombres de los integrantes)
